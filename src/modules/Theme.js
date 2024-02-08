@@ -182,13 +182,13 @@ export default class Theme {
     const palette = options.theme.palette
       ? options.theme.palette
       : mode === 'dark'
-      ? 'palette4'
-      : 'palette1'
+        ? 'palette4'
+        : 'palette1'
     const foreColor = options.chart.foreColor
       ? options.chart.foreColor
       : mode === 'dark'
-      ? '#f6f7f8'
-      : '#373d3f'
+        ? '#f6f7f8'
+        : '#373d3f'
 
     options.tooltip.theme = mode
     options.chart.foreColor = foreColor
@@ -203,7 +203,7 @@ export default class Theme {
     // D6E3F8, FCEFEF, DCE0D9, A5978B, EDDDD4, D6E3F8, FEF5EF
     switch (palette) {
       case 'palette1':
-        this.colors = ['#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0']
+        this.colors = ['#00E396', '#008FFB', '#FEB019', '#FF4560', '#775DD0']
         break
       case 'palette2':
         this.colors = ['#3f51b5', '#03a9f4', '#4caf50', '#f9ce1d', '#FF9800']
@@ -233,7 +233,7 @@ export default class Theme {
         this.colors = ['#A300D6', '#7D02EB', '#5653FE', '#2983FF', '#00B1F2']
         break
       default:
-        this.colors = ['#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0']
+        this.colors = ['#00E396', '#008FFB', '#FEB019', '#FF4560', '#775DD0']
         break
     }
     return this.colors
